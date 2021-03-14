@@ -1,0 +1,6 @@
+.footer {
+    grid-row: 3;
+    background: linear-gradient(125deg, #a8ff78,#78ffd6);
+    height: 108px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
