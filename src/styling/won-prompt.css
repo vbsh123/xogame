@@ -1,0 +1,14 @@
+.won-prompt {
+    height: 45%;
+    background-color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.won-prompt-button {
+    background: linear-gradient(125deg, #a8ff78,#78ffd6);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: block;
+    border: solid;
+    border-radius: 10px;
+    border-color: aqua;
+}

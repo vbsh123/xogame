@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import TileModel from '../model/Tile';
 import '../styling/tile.css';
 import { changeTurn } from '../utils/turn.utils';
@@ -12,14 +12,13 @@ interface Iprops {
 
 const Tile = (props: Iprops) => {
 
-    const [mark, setMark] = useState(props.tile.getMarked());
-
     const getMark = () => {
-        if (mark === 1) {
+        const tileMark = props.tile.getMarked();
+        if (tileMark === 1) {
             return "X";
         }
 
-        if (mark === 2) {
+        if (tileMark === 2) {
             return "O";
         }
 
@@ -27,9 +26,8 @@ const Tile = (props: Iprops) => {
     }
 
     const markAction = () => {
-        if (mark === 0) {
+        if (props.tile.getMarked() === 0) {
             props.tile.setMarked(props.turn);
-            setMark(props.turn)
             const nextTurn = changeTurn(props.turn);
             props.setTurn(nextTurn);
             props.winCheck();
