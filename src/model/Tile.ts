@@ -1,19 +1,23 @@
 export default class Tile {
-    private marked: number;
+    private marked: Number;
 
     constructor() {
         this.marked = 0;
     }
 
-    public setMarkedO() {
+    public setMarkedX() {
         this.marked = 1;
     }
 
-    public setMarkedX() {
+    public setMarkedO() {
         this.marked = 2;
     }
 
-    public getMarked() {
+    public getMarked(): Number {
         return this.marked;
+    }
+
+    public setMarked(turn: Number) {
+        this.marked = turn;
     }
 }
